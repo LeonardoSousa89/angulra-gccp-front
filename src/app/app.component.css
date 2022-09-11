@@ -90,7 +90,28 @@
 
 #container-output{
     height: 80%;
-    border: solid 1px black;
+
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+
+    overflow-y: scroll;
+}
+
+table{
+    width: 80%;
+    height: 15%;
+}
+
+table thead{
+    background-color: #0275d8;
+    padding: 3vh;
+    color: whitesmoke;
+}
+
+table tbody{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: larger;
 }
 
 #footer{
@@ -113,7 +134,6 @@
 
     #container-input{
         flex-direction: column;
-        /* display: none; */
     }
 
     #container-input input{
@@ -125,5 +145,13 @@
 
     #container-input button{
         width: 86%;
+    }
+
+    table{
+        width: 100%;  
+    }
+
+    #id-head, #id-body{
+        display: none;
     }
 }
