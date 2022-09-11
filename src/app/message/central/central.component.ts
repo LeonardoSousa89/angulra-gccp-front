@@ -7,15 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CentralComponent implements OnInit {
 
-  public id  :number = 0
-  public msg :string = ''
-
-  public load(id :number, msg :string):void {}
-
   constructor() { }
 
-  ngOnInit(): void {
-    // this.load()
-  }
+  ngOnInit(): void {}
 
 }
