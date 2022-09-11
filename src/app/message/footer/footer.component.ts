@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public title :string = '2021 gccp-app have all rights reserved.'
+
   constructor() { }
 
   ngOnInit(): void {
