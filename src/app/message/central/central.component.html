@@ -16,10 +16,11 @@
 
                 <tr>
                     <th id="id-body">1</th>
-                    <th>leo</th>
+                    <th *ngFor="let user of service"> {{user}}</th>
                 </tr>
             </tbody>
         </table>
+
     </div>
             
 </div>

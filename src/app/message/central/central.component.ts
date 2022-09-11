@@ -1,3 +1,4 @@
+import { ServicesService } from './../../services/services.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../../app.Component.css']
 })
 export class CentralComponent implements OnInit {
+  
+  public service :Array<string | number> = []
 
-  constructor() { }
+  constructor(private serviceService: ServicesService) { } 
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+      this.service = this.serviceService.load()
+  }
 
 }
