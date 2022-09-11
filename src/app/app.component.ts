@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls:['./app.Component.css']
 })
 export class AppComponent {
   title = 'gccp-front-ssa-tech';
